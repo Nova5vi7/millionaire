@@ -10,11 +10,7 @@ const GameOver = ({ onStart, score }) => (
       </div>
       <div className="over-screen__content-wrap">
         <div className="over-screen__score">Total score:</div>
-        <h1 className="over-screen__title">
-          {`$${score}`}
-          {' '}
-          earned
-        </h1>
+        <h1 className="over-screen__title">{`$${score}`} earned</h1>
         <div className="over-screen__button-wrap">
           <Button text="Try again" changeStatus={onStart} />
         </div>

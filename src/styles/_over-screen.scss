@@ -1,7 +1,10 @@
+@import "./_vars";
+
+
 .over-screen {
   height: 100vh;
   max-width: 100%;
-  background-color: #f5f5f7;
+  background-color: $background-question;
 
   &__wrap {
     height: 100%;
@@ -13,7 +16,7 @@
   &__score {
     font: normal 600 32px/116% "Inter";
     margin-bottom: 8px;
-    color: #1c1c21;
+    color: $black;
     opacity: 0.5;
   }
 
@@ -55,7 +58,6 @@
 
     &__title {
       font-size: 32px;
-      //   margin-bottom: 102px;
     }
 
     &__button-wrap {

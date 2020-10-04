@@ -1,9 +1,11 @@
+@import "./_vars";
+
 button {
   margin: 0;
   padding: 0;
 }
 
-.button {
+.main-button {
   max-width: 296px;
   width: 100%;
   display: flex;
@@ -14,8 +16,8 @@ button {
   font-size: 20px;
   line-height: 116%;
   font-family: "Inter";
-  background-color: #ff8b37;
-  color: #ffffff;
+  background-color: $button-inactive;
+  color: $white;
   border: none;
   cursor: pointer;
   border-radius: 12px;
@@ -27,10 +29,10 @@ button {
   }
 
   &:hover {
-    background-color: #ffac70;
+    background-color: $button-hover;
   }
 
   &:active {
-    background-color: #e87928;
+    background-color: $button-active;
   }
 }

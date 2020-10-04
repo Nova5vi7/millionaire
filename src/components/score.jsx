@@ -1,5 +1,5 @@
 import React from 'react';
-import SumButton from './sum-button';
+import RateScore from './rate-score';
 
 function Score({ ratesList, currentStep }) {
   return (
@@ -7,7 +7,7 @@ function Score({ ratesList, currentStep }) {
       <div className="score__wrap">
         {ratesList.map((rate, index) => (
           <div className="score__wrap-svg" key={rate}>
-            <SumButton
+            <RateScore
               text={`$${rate}`}
               isActive={currentStep === index}
               passed={currentStep > index}

@@ -1,3 +1,5 @@
+@import "./_vars";
+
 .reply-button {
   background-color: inherit;
   border: none;
@@ -7,7 +9,7 @@
     &.valid {
       pointer-events: none;
       .reply-overlay {
-        fill: #e6faea;
+        fill: $background-correct;
       }
       path {
         animation: valid-animation 0.5s linear infinite;
@@ -17,7 +19,7 @@
     &.invalid {
       pointer-events: none;
       .reply-overlay {
-        fill: #fdeeed;
+        fill: $background-wrong;
       }
       path {
         animation: invalid-animation 0.5s linear infinite;
@@ -25,17 +27,17 @@
     }
 
     path {
-      stroke: #d0d0d8;
+      stroke: $gray;
     }
 
     &:hover {
       path {
-        stroke: #ff8b37;
+        stroke: $button-inactive;
       }
     }
 
     .reply-overlay {
-      fill: #fff;
+      fill: $white;
     }
 
     .reply-text,
@@ -54,19 +56,19 @@
 
 @keyframes valid-animation {
   from {
-    stroke: #d0d0d8;
+    stroke: $gray;
   }
   to {
-    stroke: #47d867;
+    stroke: $correct;
   }
 }
 
 @keyframes invalid-animation {
   from {
-    stroke: #d0d0d8;
+    stroke: $gray;
   }
   to {
-    stroke: #ec6259;
+    stroke: $wrong;
   }
 }
 

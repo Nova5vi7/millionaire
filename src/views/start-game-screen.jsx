@@ -9,9 +9,7 @@ const StartGame = ({ onStart }) => (
         <img src={hand} alt="img" />
       </div>
       <div className="start-screen__content-wrap">
-        <h1 className="start-screen__title">
-          Who wants to be a millionaire?
-        </h1>
+        <h1 className="start-screen__title">Who wants to be a millionaire?</h1>
         <div className="start-screen__button-wrap">
           <Button text="Start" changeStatus={onStart} />
         </div>

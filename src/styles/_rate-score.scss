@@ -1,0 +1,26 @@
+@import "./_vars";
+
+.rate-score {
+  transition: all 0.3s ease;
+
+  &__border {
+    stroke: $gray;
+  }
+
+  &--active {
+    .rate-score__border {
+      stroke: $button-inactive;
+    }
+  }
+
+
+  &__text {
+    font: normal 20px/116% "Inter";
+  }
+}
+
+@media only screen and (max-width: 376px) {
+ .rate-score {
+   width: 100%;
+ }
+}

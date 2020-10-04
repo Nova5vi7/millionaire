@@ -1,15 +1,24 @@
+@import "./_vars";
+
 .score-visible {
   position: absolute;
   background-color: inherit;
   border: none;
+  height: 24px;
   font-size: 24px;
   top: 16px;
   right: 16px;
   cursor: pointer;
   display: none;
+  z-index: 10;
+  transition: all 0.3s ease;
+
+  &:hover {
+      color: $button-inactive;
+  }
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: $lg) {
   .score-visible {
     display: block;
   }
