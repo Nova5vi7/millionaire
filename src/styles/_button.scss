@@ -1,0 +1,36 @@
+button {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  max-width: 296px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 21px 24px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 116%;
+  font-family: "Inter";
+  background-color: #ff8b37;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+
+  @media only screen and (max-width: $sm) {
+    font-size: 14px;
+    padding: 16px;
+  }
+
+  &:hover {
+    background-color: #ffac70;
+  }
+
+  &:active {
+    background-color: #e87928;
+  }
+}

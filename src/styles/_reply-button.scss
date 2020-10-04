@@ -1,0 +1,79 @@
+.reply-button {
+  background-color: inherit;
+  border: none;
+  &__wrap {
+    cursor: pointer;
+    width: 421px;
+    &.valid {
+      pointer-events: none;
+      .reply-overlay {
+        fill: #e6faea;
+      }
+      path {
+        animation: valid-animation 0.5s linear infinite;
+      }
+    }
+
+    &.invalid {
+      pointer-events: none;
+      .reply-overlay {
+        fill: #fdeeed;
+      }
+      path {
+        animation: invalid-animation 0.5s linear infinite;
+      }
+    }
+
+    path {
+      stroke: #d0d0d8;
+    }
+
+    &:hover {
+      path {
+        stroke: #ff8b37;
+      }
+    }
+
+    .reply-overlay {
+      fill: #fff;
+    }
+
+    .reply-text,
+    .reply-letter {
+      white-space: pre;
+      font-family: "Inter";
+      font-size: 20;
+      letter-spacing: 0em;
+    }
+
+    .reply-letter {
+      font-weight: 600;
+    }
+  }
+}
+
+@keyframes valid-animation {
+  from {
+    stroke: #d0d0d8;
+  }
+  to {
+    stroke: #47d867;
+  }
+}
+
+@keyframes invalid-animation {
+  from {
+    stroke: #d0d0d8;
+  }
+  to {
+    stroke: #ec6259;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .reply-button {
+    &__wrap {
+      width: 320px;
+    }
+  }
+}

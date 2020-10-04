@@ -1,0 +1,14 @@
+.score {
+  height: 100%;
+  padding: 166px 0;
+  &__wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  &__wrap-svg {
+    margin-bottom: 8px;
+  }
+}

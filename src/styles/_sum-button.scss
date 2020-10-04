@@ -1,0 +1,17 @@
+.sum-button {
+  transition: all 0.3s ease;
+
+  .sum-border {
+    stroke: #d0d0d8;
+  }
+
+  // &:hover {
+  //   .sum-border {
+  //     stroke: #ff8b37;
+  //   }
+  // }
+
+  .sum-button-text {
+    font: normal 20px/116% "Inter";
+  }
+}

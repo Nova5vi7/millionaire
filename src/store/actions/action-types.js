@@ -1,0 +1,5 @@
+export default {
+  CHANGE_STATUS: 'CHANGE_STATUS',
+  NEXT_STEP: 'NEXT_STEP',
+  GAME_OVER: 'GAME_OVER',
+};
